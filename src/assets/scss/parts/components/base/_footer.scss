@@ -1,0 +1,59 @@
+@use "sass:math";
+
+.footer{
+  height: 200px;
+  background-color: lighten($color-primary-light, 10%);
+
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+
+  p,
+  .link-footer{
+    font-size: 21px;
+
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 32px;
+
+    span{
+      height: 24px;
+      width: fit-content;
+      margin-left: 8px;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .link-footer{
+    margin-left: auto;
+  }
+
+  .upper-footer{
+    height: calc(100% - 36px);
+    display: flex;
+    align-items: center;
+  }
+  .lower-footer{
+    height: 36px;
+    display: flex;
+    align-items: center;
+    border-top: 0.01rem solid darken($color-primary-light, 2%);
+
+    small,
+    a{
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    a{
+      margin-left: auto;
+    }
+  }
+}

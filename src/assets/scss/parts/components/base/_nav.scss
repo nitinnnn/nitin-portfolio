@@ -1,0 +1,320 @@
+@use "sass:map";
+
+.nav-wrap {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  padding: 16px 7%;
+  z-index: 10000;
+  align-items: center;
+
+  background-color: #ffffff;
+
+  & .logo-wrap {
+    height: 42px;
+    width: auto;
+    position: relative;
+
+    svg,
+    img {
+      height: 42px;
+    }
+  }
+
+  & .nav-links {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+
+    .horizontal-nav-list {
+      display: flex;
+      flex-direction: row;
+      margin-top: 4px;
+      height: fit-content;
+
+      li {
+        text-align: right;
+        font-size: 14px;
+
+        padding-bottom: 2px;
+        position: relative;
+        width: fit-content;
+        margin-right: 26px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          position: relative;
+
+          &.link-active,
+          &:hover {
+            &::after {
+              content: "";
+              height: 1px;
+              width: 100%;
+              background-color: $color-primary-dark;
+              position: absolute;
+              bottom: -2px;
+              left: 0;
+            }
+          }
+        }
+
+        &.colored {
+          a {
+            color: $color-primary-light;
+          }
+          &:hover {
+            &::after {
+              background-color: $color-primary-light;
+            }
+          }
+        }
+      }
+    }
+
+    .vertical-nav-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: $space * 2;
+
+      li {
+        text-align: right;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        position: relative;
+        width: fit-content;
+        padding-bottom: 2px;
+
+        &:hover {
+          &::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background-color: $color-primary-dark;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-device-width: 767px) and (orientation: portrait) {
+      display: none;
+    }
+  }
+
+  & .mobile-menu {
+    display: none;
+    margin-left: auto;
+
+    .menu-icon {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    @media only screen and (max-device-width: 767px) and (orientation: portrait) {
+      display: block;
+    }
+  }
+}
+
+.sidebar-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: $color-primary-dark;
+  z-index: 9999;
+  padding: 16px;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &.show-sidebar {
+    display: flex;
+  }
+
+  .close-icon-wrap {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: $color-primary-light;
+
+    svg {
+      fill: $color-primary-dark;
+      width: 32px;
+      height: 32px;
+
+      g {
+        fill: $color-primary-dark;
+      }
+    }
+  }
+
+  .sidebar-nav-list {
+    margin: auto 0;
+    li {
+      color: $color-secondary-light;
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      position: relative;
+      width: fit-content;
+
+      &.link-active {
+        &::after {
+          content: "";
+          height: 3px;
+          width: 100%;
+          background-color: $color-secondary-light;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .vertical-nav-list {
+    li {
+      color: $color-secondary-light;
+      font-size: 16px;
+      margin-bottom: 6px;
+      padding-bottom: 2px;
+      font-weight: bold;
+    }
+    margin-bottom: $space * 7;
+  }
+}
+
+.sidebar-wrap-proverb {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: $color-primary-dark;
+  z-index: 99999;
+  padding: 16px;
+  display: none;
+  flex-direction: column;
+
+  @media only screen and (min-device-width: 768px) {
+    padding: 16px 40%;
+    justify-content: center;
+  }
+
+  &.show-sidebar {
+    display: flex;
+  }
+
+  .close-icon-wrap {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    color: $color-primary-light;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    svg {
+      fill: $color-primary-dark;
+      width: 26px;
+      height: 26px;
+
+      g {
+        fill: $color-primary-dark;
+      }
+    }
+  }
+
+  .title,
+  .literally,
+  .meaning {
+    color: $color-secondary-light;
+  }
+
+  .title,
+  .literally {
+    margin-bottom: 12px !important;
+  }
+
+  .title {
+    margin-top: $space * 2;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .literally,
+  .meaning {
+    font-size: 16px;
+    display: flex;
+    span {
+      text-decoration: underline;
+      margin-right: 12px;
+      font-weight: bold;
+      width: 70px;
+      flex-shrink: 0;
+      margin-top: -2px;
+    }
+  }
+
+  .meaning {
+    padding-bottom: 18px;
+    border-bottom: 1px solid $color-secondary-light;
+  }
+}
+
+.japanese-proverb {
+  width: 72px;
+  height: 200px;
+  background-color: $color-secondary-light;
+  background-size: contain;
+  -webkit-mask: url("../img/proverb.svg") no-repeat center;
+  mask: url("../img/proverb.svg") no-repeat center;
+
+  &.bottom {
+    position: absolute;
+    bottom: $space * 7;
+    right: 0;
+  }
+
+  &.right {
+    position: absolute;
+    top: 40%;
+    right: $space - 0.5;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 160px;
+    opacity: 0.4;
+    transition: opacity 500ms cubic-bezier(0.2, 0, 0, 1) 0s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    @media only screen and (max-device-width: 767px) and (orientation: portrait) {
+      display: none;
+    }
+  }
+
+  &.top {
+    margin-top: $space * 4;
+
+    @media only screen and (min-device-width: 768px) {
+      margin-top: $space;
+    }
+  }
+}

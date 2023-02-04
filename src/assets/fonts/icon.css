@@ -1,0 +1,367 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "icon";
+  src: url("./flaticon.ttf?fcd96e6fc1518c7459e81d03b0cbcfdd") format("truetype"), url("./flaticon.woff?fcd96e6fc1518c7459e81d03b0cbcfdd") format("woff"), url("./flaticon.woff2?fcd96e6fc1518c7459e81d03b0cbcfdd") format("woff2"), url("./flaticon.eot?fcd96e6fc1518c7459e81d03b0cbcfdd#iefix") format("embedded-opentype"), url("./flaticon.svg?fcd96e6fc1518c7459e81d03b0cbcfdd#flaticon") format("svg");
+}
+i[class^=icon-]:before, i[class*=" icon-"]:before {
+  font-family: icon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.icon-sm {
+  font-size: 20px;
+}
+
+.icon-md {
+  font-size: 24px;
+}
+
+.icon-lg {
+  font-size: 28px;
+}
+
+.icon-xl {
+  font-size: 32px;
+}
+
+.icon-shopping-list:before {
+  content: "";
+}
+
+.icon-delivery:before {
+  content: "";
+}
+
+.icon-express-delivery:before {
+  content: "";
+}
+
+.icon-scooter:before {
+  content: "";
+}
+
+.icon-delivery-truck:before {
+  content: "";
+}
+
+.icon-lorry:before {
+  content: "";
+}
+
+.icon-trolley:before {
+  content: "";
+}
+
+.icon-box:before {
+  content: "";
+}
+
+.icon-box-1:before {
+  content: "";
+}
+
+.icon-package:before {
+  content: "";
+}
+
+.icon-box-2:before {
+  content: "";
+}
+
+.icon-24-hours:before {
+  content: "";
+}
+
+.icon-24-hours-1:before {
+  content: "";
+}
+
+.icon-24-hour-service:before {
+  content: "";
+}
+
+.icon-telephone:before {
+  content: "";
+}
+
+.icon-phone-call:before {
+  content: "";
+}
+
+.icon-smartphone:before {
+  content: "";
+}
+
+.icon-duplicate:before {
+  content: "";
+}
+
+.icon-brain:before {
+  content: "";
+}
+
+.icon-technology:before {
+  content: "";
+}
+
+.icon-technological:before {
+  content: "";
+}
+
+.icon-energy:before {
+  content: "";
+}
+
+.icon-plug:before {
+  content: "";
+}
+
+.icon-plug-1:before {
+  content: "";
+}
+
+.icon-credit-card:before {
+  content: "";
+}
+
+.icon-credit-card-1:before {
+  content: "";
+}
+
+.icon-income:before {
+  content: "";
+}
+
+.icon-credit-card-payment:before {
+  content: "";
+}
+
+.icon-clock:before {
+  content: "";
+}
+
+.icon-report:before {
+  content: "";
+}
+
+.icon-statistics:before {
+  content: "";
+}
+
+.icon-newspaper:before {
+  content: "";
+}
+
+.icon-time-to-market:before {
+  content: "";
+}
+
+.icon-exclusive:before {
+  content: "";
+}
+
+.icon-stethoscope:before {
+  content: "";
+}
+
+.icon-pharmacy:before {
+  content: "";
+}
+
+.icon-message:before {
+  content: "";
+}
+
+.icon-location:before {
+  content: "";
+}
+
+.icon-address:before {
+  content: "";
+}
+
+.icon-placeholder:before {
+  content: "";
+}
+
+.icon-medicine:before {
+  content: "";
+}
+
+.icon-pharmacy-1:before {
+  content: "";
+}
+
+.icon-pharmacy-2:before {
+  content: "";
+}
+
+.icon-app-store:before {
+  content: "";
+}
+
+.icon-app-store-1:before {
+  content: "";
+}
+
+.icon-mobile-store:before {
+  content: "";
+}
+
+.icon-play-store:before {
+  content: "";
+}
+
+.icon-apple:before {
+  content: "";
+}
+
+.icon-google:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-linkedin:before {
+  content: "";
+}
+
+.icon-linkedin-1:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-facebook-1:before {
+  content: "";
+}
+
+.icon-youtube:before {
+  content: "";
+}
+
+.icon-youtube-1:before {
+  content: "";
+}
+
+.icon-youtube-2:before {
+  content: "";
+}
+
+.icon-play-button:before {
+  content: "";
+}
+
+.icon-play-button-1:before {
+  content: "";
+}
+
+.icon-play:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-twitter-1:before {
+  content: "";
+}
+
+.icon-twitter-2:before {
+  content: "";
+}
+
+.icon-instagram-1:before {
+  content: "";
+}
+
+.icon-linkedin-2:before {
+  content: "";
+}
+
+.icon-arroba:before {
+  content: "";
+}
+
+.icon-gmail:before {
+  content: "";
+}
+
+.icon-left-arrow:before {
+  content: "";
+}
+
+.icon-back:before {
+  content: "";
+}
+
+.icon-next:before {
+  content: "";
+}
+
+.icon-right-arrow:before {
+  content: "";
+}
+
+.icon-next-1:before {
+  content: "";
+}
+
+.icon-download:before {
+  content: "";
+}
+
+.icon-upload:before {
+  content: "";
+}
+
+.icon-checked:before {
+  content: "";
+}
+
+.icon-cancel:before {
+  content: "";
+}
+
+.icon-next-2:before {
+  content: "";
+}
+
+.icon-upload-1:before {
+  content: "";
+}
+
+.icon-back-1:before {
+  content: "";
+}
+
+.icon-export:before {
+  content: "";
+}
+
+.icon-download-1:before {
+  content: "";
+}
+
+.icon-cancel-1:before {
+  content: "";
+}
+
+.icon-download-2:before {
+  content: "";
+}

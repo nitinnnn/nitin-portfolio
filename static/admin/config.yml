@@ -33,11 +33,26 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
 
+  - name: "socialMedia"
+    label: "Social Media"
+    folder: "src/pages/social-media"
+    create: true
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "social-media",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Icon", name: "icon", widget: "image" }
+
   - name: "pages"
     label: "Pages"
     files:
       - file: "src/pages/index.md"
-        label: "Landing Page"
+        label: "Index Page"
         name: "index"
         fields:
           - {
@@ -48,79 +63,7 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - {
-              label: Mainpitch,
-              name: mainpitch,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
-                ],
-            }
-          - { label: Description, name: description, widget: string }
-          - {
-              label: Intro,
-              name: intro,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Main,
-              name: main,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                ],
-            }
+          - { label: City, name: city, widget: string }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
@@ -131,8 +74,76 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
+          - { label: "Quote", name: "quote", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "My Image", name: "myImage", widget: "image" }
+          - { label: "Punchline", name: "punchline", widget: "string" }
+          - { label: "Extra Content", name: "extraContent", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Things I Love",
+              name: "thingsILove",
+              widget: "object",
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+          - {
+              label: "Let's Connect",
+              name: "letsConnect",
+              widget: "object",
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+          - {
+              label: "Web Development Card",
+              name: "webDevCard",
+              widget: "object",
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  { label: "Image", name: "image", widget: "image" },
+                ],
+            }
+          - {
+              label: "UI Design Card",
+              name: "uiDesCard",
+              widget: "object",
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  { label: "Image", name: "image", widget: "image" },
+                ],
+            }
+          - {
+              label: "Web Development Figures",
+              name: "webDevFigureCard",
+              widget: "object",
+              fields:
+                [
+                  { label: "Figure", name: "figure", widget: "string" },
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+          - {
+              label: "UI Design Figures",
+              name: "uiDesFigureCard",
+              widget: "object",
+              fields:
+                [
+                  { label: "Figure", name: "figure", widget: "string" },
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

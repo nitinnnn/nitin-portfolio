@@ -5,15 +5,45 @@ module.exports = {
       "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
     {
-      resolve: "gatsby-plugin-sass",
+      resolve: `gatsby-omni-font-loader`,
       options: {
-        sassOptions: {
-          indentedSyntax: true,
-        },
+        enableListener: true,
+        preconnect: [
+          `https://fonts.googleapis.com`,
+          `https://fonts.gstatic.com`,
+        ],
+        web: [
+          {
+            name: `Poppins`,
+            file: `https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap`,
+          },
+          {
+            name: `Montserrat`,
+            file: `https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap`,
+          },
+          {
+            name: `Rubik`,
+            file: `https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet`
+          },
+          {
+            name: `Gochi Hand`,
+            file: `https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet`
+          }
+        ],
+        /* Self-hosted fonts config. Add font files and font CSS files to "static" folder */
+        custom: [
+          {
+            /* Exact name of the font as defied in @font-face CSS rule */
+            name: "Quarz",
+            /* Path to the font CSS file inside the "static" folder with @font-face definition */
+            file: `/fonts/Quarz.woff2`,
+          },
+        ],
       },
     },
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
@@ -37,7 +67,24 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `none`,
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: `transparent`,
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        }
+      }
+    },
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-transformer-remark",

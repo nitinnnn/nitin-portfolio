@@ -1,0 +1,22 @@
+/**
+ * Global Components
+ * =================================
+ * - Container
+ * - Typography
+ * - Navigration
+ * - Pages > Index Page
+ * - 
+ */
+@import 
+    './components/base/container',
+    './components/base/typography',
+    './components/base/forms',
+    './components/base/nav',
+    './components/base/footer',
+    './components/base/tech-icons';
+
+@import
+    './components/pages/index',
+    './components/pages/about',
+    './components/pages/work',
+    './components/pages/case-study';

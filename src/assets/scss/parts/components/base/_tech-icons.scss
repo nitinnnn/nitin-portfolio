@@ -1,0 +1,242 @@
+.tech-icon {
+  flex-shrink: 0;
+  height: 48px;
+  width: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &.angular {
+    -webkit-background-image: url("../icons/angular.svg");
+    background-image: url("../icons/angular.svg");
+  }
+
+  &.strapi {
+    -webkit-background-image: url("../icons/strapi.svg");
+    background-image: url("../icons/strapi.svg");
+  }
+  
+  &.react {
+    -webkit-background-image: url("../icons/react.svg");
+    background-image: url("../icons/react.svg");
+  }
+
+  &.gatsby {
+    -webkit-background-image: url("../icons/gatsby.svg");
+    background-image: url("../icons/gatsby.svg");
+  }
+
+  &.borboun {
+    width: 118px;
+    -webkit-background-image: url("../icons/borboun.svg");
+    background-image: url("../icons/borboun.svg");
+  }
+
+  &.netlify-cms {
+    width: 118px;
+    -webkit-background-image: url("../icons/ntfy-cms.svg");
+    background-image: url("../icons/ntfy-cms.svg");
+  }
+
+  &.html {
+    -webkit-background-image: url("../icons/html.svg");
+    background-image: url("../icons/html.svg");
+  }
+
+  &.netlify {
+    -webkit-background-image: url("../icons/netlify.svg");
+    background-image: url("../icons/netlify.svg");
+  }
+
+  &.node {
+    -webkit-background-image: url("../icons/node.svg");
+    background-image: url("../icons/node.svg");
+  }
+
+  &.npm {
+    width: 68px;
+    -webkit-background-image: url("../icons/npm.svg");
+    background-image: url("../icons/npm.svg");
+  }
+
+  &.pug {
+    width: 62px;
+    height: 62px;
+    -webkit-background-image: url("../icons/pug.svg");
+    background-image: url("../icons/pug.svg");
+  }
+
+  &.rust {
+    -webkit-background-image: url("../icons/rust.svg");
+    background-image: url("../icons/rust.svg");
+  }
+
+  &.scss {
+    width: 62px;
+    height: 62px;
+    -webkit-background-image: url("../icons/scss.svg");
+    background-image: url("../icons/scss.svg");
+  }
+
+  &.yarn {
+    -webkit-background-image: url("../icons/yarn.svg");
+    background-image: url("../icons/yarn.svg");
+  }
+
+  &.jamstack {
+    -webkit-background-image: url("../icons/jamstack.svg");
+    background-image: url("../icons/jamstack.svg");
+  }
+
+  &.parcel {
+    width: 46px;
+    height: 46px;
+
+    -webkit-background-image: url("../icons/parcel.svg");
+    background-image: url("../icons/parcel.svg");
+  }
+
+  &.iitr {
+    -webkit-background-image: url("../icons/iit-ropar.png");
+    background-image: url("../icons/iit-ropar.png");
+  }
+
+  &.zazzy {
+    width: 120px;
+    height: 32px;
+
+    -webkit-background-image: url("../icons/zazzy-dark.svg");
+    background-image: url("../icons/zazzy-dark.svg");
+  }
+
+  &.biddano {
+    width: 120px;
+    height: 32px;
+
+    -webkit-background-image: url("../icons/biddano.svg");
+    background-image: url("../icons/biddano.svg");
+  }
+
+  &.nx {
+    width: 62px;
+    height: 62px;
+
+    -webkit-background-image: url("../icons/nx-dark.svg");
+    background-image: url("../icons/nx-dark.svg");
+
+    @media (prefers-color-scheme: dark) {
+      -webkit-background-image: url("../icons/nx-light.svg");
+      background-image: url("../icons/nx-light.svg");
+    }
+  }
+
+  &.webpack {
+    width: 52px;
+    height: 52px;
+
+    -webkit-background-image: url("../icons/webpack.svg");
+    background-image: url("../icons/webpack.svg");
+  }
+
+  &.postgres {
+    width: 52px;
+    height: 52px;
+
+    -webkit-background-image: url("../icons/postgres.svg");
+    background-image: url("../icons/postgres.svg");
+  }
+}
+
+.brand-icon {
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 112px;
+  height: 28px;
+
+  &.zazzy {
+    -webkit-background-image: url("../icons/zazzy-dark.svg");
+    background-image: url("../icons/zazzy-dark.svg");
+  }
+
+  &.biddano {
+    -webkit-background-image: url("../icons/biddano.svg");
+    background-image: url("../icons/biddano.svg");
+  }
+}
+
+.social-ico {
+  flex-shrink: 0;
+  height: 28px;
+  width: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-primary-dark;
+  transition: all 0.3s ease-in-out;
+
+  &.facebook {
+    -webkit-mask: url("../social-ico/facebook.svg") no-repeat center;
+    mask: url("../social-ico/facebook.svg") no-repeat center;
+
+    &:hover {
+      background-color: #1877f2;
+    }
+  }
+
+  &.twitter {
+    -webkit-mask: url("../social-ico/twitter.svg") no-repeat center;
+    mask: url("../social-ico/twitter.svg") no-repeat center;
+
+    &:hover {
+      background-color: #1da1f2;
+    }
+  }
+
+  &.instagram {
+    -webkit-mask: url("../social-ico/instagram.svg") no-repeat center;
+    mask: url("../social-ico/instagram.svg") no-repeat center;
+
+    &:hover {
+      background-color: #e4405f;
+    }
+  }
+
+  &.youtube {
+    -webkit-mask: url("../social-ico/youtube.svg") no-repeat center;
+    mask: url("../social-ico/youtube.svg") no-repeat center;
+
+    &:hover {
+      background-color: #ff0000;
+    }
+  }
+
+  &.linkedin {
+    -webkit-mask: url("../social-ico/linkedin.svg") no-repeat center;
+    mask: url("../social-ico/linkedin.svg") no-repeat center;
+
+    &:hover {
+      background-color: #0a66c2;
+    }
+  }
+
+  &.dribble {
+    -webkit-mask: url("../social-ico/dribbble.svg") no-repeat center;
+    mask: url("../social-ico/dribbble.svg") no-repeat center;
+
+    &:hover {
+      background-color: #ea4c89;
+    }
+  }
+
+  &.behance {
+    -webkit-mask: url("../social-ico/behance.svg") no-repeat center;
+    mask: url("../social-ico/behance.svg") no-repeat center;
+
+    &:hover {
+      background-color: #1769ff;
+    }
+  }
+}

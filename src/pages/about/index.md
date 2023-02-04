@@ -1,19 +1,55 @@
 ---
-templateKey: 'about-page'
+punchline: Lorem ipsum dolor sit amet consectetur adipisicing elit.
 path: /about
-title: About our values
+templateKey: about-page
+quote: veni vidi veci
+title: about me
+myImage: /img/nitin.png
+extraContent: Coffee is a small tree or shrub that grows in the forest
+  understory in its wild form, and traditionally was grown commercially under
+  other trees that provided shade. The forest-like structure of shade coffee
+  farms provides habitat for a great number of migratory and resident species.
+thingsILove:
+  heading: 👾 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non odit
+    repellat eius sit provident.
+  description: Coffee is a small tree or shrub that grows in the forest understory
+    in its wild form, and traditionally was grown commercially under other trees
+    that provided shade. The forest-like structure of shade coffee farms
+    provides habitat for a great number of migratory and resident species.
+letsConnect:
+  heading: 👾 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non odit
+    repellat eius sit provident.
+  description: >-
+    Coffee is a small tree or shrub that grows in the forest understory in its
+    wild form, and traditionally was grown commercially under other trees that
+    provided shade. The forest-like structure of shade coffee farms provides
+    habitat for a great number of migratory and resident species.
+
+    Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+webDevCard:
+  heading: Web Development
+  description: Web development is the work involved in developing a website for
+    the Internet or an intranet. Web development can range from developing a
+    simple single static page of plain text to complex web applications.
+  image: /img/3d-1.png
+uiDesCard:
+  heading: UI/UX Design
+  description: User interface (UI) design is the process designers use to build
+    interfaces in software or computerized devices, focusing on looks or style.
+    Designers aim to create interfaces which users find easy to use and
+    pleasurable.
+  image: /img/3d-2.png
+webDevFigureCard:
+  figure: 25+
+  heading: Web Projects Delivered
+  description: lorem ipsum dolor sit amet, consectetur, lorem ipsum dol
+uiDesFigureCard:
+  figure: 15+
+  heading: UI Projects Delivered
+  description: lorem ipsum dolor sit amet, consectetur, lorem ipsum dol
 ---
-### Shade-grown coffee
+# Lorem ipsum dolor sit amet consectetur adipisicing elit. Non odit repellat eius sit provident.
+
 Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
-
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
-
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
